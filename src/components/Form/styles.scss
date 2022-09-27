@@ -1,0 +1,23 @@
+@import "src/styles/sass/main";
+
+.Form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 32px;
+
+  &__error {
+    position: absolute;
+    top: -32px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    padding: 2px 4px;
+    background: blanchedalmond;
+    font: 700 16px/16px Roboto;
+    color: red;
+    text-align: center;
+    z-index: 5;
+  }
+}
