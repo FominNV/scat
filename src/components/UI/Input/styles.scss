@@ -1,0 +1,57 @@
+@import "src/styles/sass/main";
+
+.Input {
+  position: relative;
+  width: 300px;
+  border: 3px solid blue;
+  border-radius: 12px;
+
+  &_error {
+    border-color: red;
+  }
+
+  &__label {
+    position: absolute;
+    top: -12px;
+    left: 8px;
+    display: block;
+    padding: 2px 4px;
+    background: blanchedalmond;
+    font: 700 12px/12px Roboto;
+    color: blue;
+    z-index: 2;
+  }
+
+  &__input {
+    @include inp-reset;
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    font: 400 16px/18px Roboto;
+    color: black;
+  }
+
+  &__button-clear {
+    @include btn-reset;
+    position: absolute;
+    top: -12px;
+    right: 8px;
+    padding: 2px 4px;
+    background: blanchedalmond;
+    font: 700 12px/12px Roboto;
+    color: green;
+    z-index: 2;
+
+    &_hidden {
+      display: none;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    left: 8px;
+    bottom: -20px;
+    font: 400 12px/12px Roboto;
+    color: red;
+  }
+}
